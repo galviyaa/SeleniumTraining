@@ -39,7 +39,7 @@ public class Demo1 {
 		{
 			System.out.println("error occured");
 		}*/
-		System.out.println("GitTest");
+		System.out.println("GitTest1");
 	}
 
 }
