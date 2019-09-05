@@ -15,10 +15,12 @@ public class Demo2 {
 		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumJar\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://newtours.demoaut.com/");
-		//driver.findElement(By.name("userName")).sendKeys("manzoor");
-		//driver.findElement(By.name("password")).sendKeys("manzoor");
-		//driver.findElement(By.name("login")).click();
-		//Thread.sleep(3000);
+		driver.findElement(By.name("userName")).sendKeys("manzoor");
+		driver.findElement(By.name("password")).sendKeys("manzoor");
+		driver.findElement(By.name("login")).click();
+		Thread.sleep(3000);
+		String label1 = driver.findElement(By.xpath("//*[contains(text(),'User')]")).getText();
+		System.out.println(label1);
 	
 	/* if(driver.findElement(By.xpath("//*[@name='tripType' and @value='roundtrip']")).isSelected())
 		 
